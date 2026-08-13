@@ -9,10 +9,6 @@
   font-family: 'Almarai', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 html,
 body,
 #root {
@@ -30,6 +26,13 @@ body {
 
 .scrollbar-none::-webkit-scrollbar {
   display: none;
+}
+
+.scroll-frame-canvas {
+  display: block;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  contain: strict;
 }
 
 /* Noise overlay for the frame sequence */
